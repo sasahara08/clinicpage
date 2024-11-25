@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    background-color: #fff8ef;
+}
+.band {
+    background-color: #f98866;
+    border-radius: 10px;
+}
+
+h1 {
+    /* background-color: #f98866;
+    border-radius: 10px; */
+    margin: 3%;
+}
+h2 {
+    text-align: right;
+    margin-right: 5%;
+}
+.container {
+    display: flex; flex-wrap: wrap; 
+    justify-content: space-between; 
+    width: 50%; /* お好みの幅に調整してください */
+    margin: 10% 25%; /* 中央揃えにするため */
+}
+.box {
+    width: calc(50% - 10px); /* 2つのボックスを並べるため */ 
+    height: 300px; /* お好みの高さに調整してください */ 
+    font-size: 30px;
+    color: #f98866;
+    background-color: lightblue; 
+    margin-bottom: 10px; /* ボックス間のスペース */ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 1px solid #ccc
+
+}
