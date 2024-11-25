@@ -1,0 +1,71 @@
+body {
+    background-color: #fff8ef;
+}
+
+.page-css {
+    width: 90%;
+    margin: 50px 5%;
+}
+
+h3 {
+    padding: 0.5em;/*文字周りの余白*/
+    color: #494949;/*文字色*/
+    border-left: solid 5px #f98866;
+  }
+
+.border{
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+    background: linear-gradient(transparent 60%, #f98866 60%);
+    font-size: 1.5rem;
+    
+    
+}
+
+  hr{
+    color: #f98866;
+  }
+
+.container {
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center; /* 縦方向の中央揃え */
+    gap: 20px; /* 要素間の間隔 */
+    margin: 50px 0;
+    padding: 15px 50px;
+}
+
+.map, .table_Css {
+    flex: 1; /* 要素を均等に配置 */
+    margin: 30px 5px;
+    height: 500px;
+}
+
+.table_Css {
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+table { 
+    border-collapse: separate;
+    border-spacing: 1px;
+    width: 100%;
+    
+}
+
+table th, table td {
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+table th {
+    background-color: #f98866;
+    color: white;
+}
+
+table td {
+    background-color: #fff8ee;
+    border: solid 1px #f98866;
+}
