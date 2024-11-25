@@ -6,16 +6,18 @@ body {
 .band {
     background-color: #f98866;
     border-radius: 10px;
+    height: 70px;
 }
 
 h1 {
-    /* background-color: #f98866;
-    border-radius: 10px; */
-    margin: 3%;
+    padding: 15px 0px 15px 3%;
+
 }
 h2 {
     text-align: right;
-    margin-right: 5%;
+    margin-top: -80px;
+    /* padding: -50px; */
+    margin-right: 3%;
 }
 .container {
     display: flex; flex-wrap: wrap; 
@@ -23,16 +25,37 @@ h2 {
     width: 50%; /* お好みの幅に調整してください */
     margin: 10% 25%; /* 中央揃えにするため */
 }
-.box {
+.box1,
+.box2,
+.box3,
+.box4 {
     width: calc(50% - 10px); /* 2つのボックスを並べるため */ 
     height: 300px; /* お好みの高さに調整してください */ 
     font-size: 30px;
-    color: #f98866;
-    background-color: lightblue; 
+    /* color: #f98866; */
+    background-color: rgb(132, 195, 216); 
     margin-bottom: 10px; /* ボックス間のスペース */ 
     display: flex; 
     align-items: center; 
     justify-content: center; 
     border: 1px solid #ccc
-
+}
+.box2 {
+    background-color: lightpink;
+}
+.box3 {
+    background-color: bisque;
+    /* background-color: rgb(125, 220, 220); */
+}
+.box4 {
+    /* background-color: bisque; */
+    background-color: rgb(125, 220, 220);
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #6d6370;
+    /* border: solid 5px;
+    border-radius: 10px;
+    border-color:rgb(93, 182, 93) */
 }
