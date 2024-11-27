@@ -7,6 +7,25 @@ body {
     margin: 50px 5%;
 }
 
+h3 {
+    padding: 0.5em;/*文字周りの余白*/
+    color: #494949;/*文字色*/
+    border-left: solid 5px #f98866;
+  }
+
+.border{
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+    background: linear-gradient(transparent 60%, #f98866 60%);
+    font-size: 1.5rem;
+    
+    
+}
+
+  hr{
+    color: #f98866;
+  }
+
 .container {
     display: flex;
     justify-content: center; /* 横方向の中央揃え */
