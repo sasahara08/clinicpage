@@ -27,3 +27,16 @@ nav a:hover{
 color:#F7CB4D;
 border-bottom:2px solid #F7CB4D;
 }
+
+div.sample1 { width: 30%; padding: 2em;
+                 border: solid 1.5em transparent;
+                 background: yellow;
+                 background-clip: border-box; }
+   div.sample2 { width: 30%; padding: 2em;
+                 border: solid 1.5em transparent;
+                 background: yellow;
+                 background-clip: padding-box; }
+   div.sample3 { width: 30%; padding: 2em;
+                 border: solid 1.5em #99CC99;
+                 background: yellow;
+                 background-clip: content-box; }
