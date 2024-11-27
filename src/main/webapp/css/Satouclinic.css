@@ -16,9 +16,9 @@ h1 a {
     color: rgb(3, 20, 25);
 }
 h1 a:hover {
-    background-color: #f15b2e;
-    border-radius: 50%;
-    padding: 11px 0px 10px 0px;
+    background-color: #c85ba2d5;
+    border-radius: 46%; 
+    padding: 16px 5px 5px 5px;
 }
 h2 {
     text-align: right;
@@ -28,6 +28,12 @@ h2 {
 }
 h2 a {
     color: rgb(3, 20, 25);
+}
+h2 a:hover {
+    background-color: #e7f12e;
+    border-radius: 50%;
+
+    padding: 12px 7px 8px 7px;
 }
 .container {
     display: flex; flex-wrap: wrap; 
