@@ -1,48 +1,61 @@
 @charset "UTF-8";
-nav{
-text-align: center;
-width: 100%;
-}
-nav ul{
-margin: 80px auto;
-padding: 0 ;
-}
-nav li{
-list-style: none;
-display: inline-block;
-width: 10%;
-min-width: 90px;
-}
-nav li:not(:last-child){
-border-right:2px solid #ddd;
-}
-nav a{
-text-decoration: none;
-color: #333;
-}
-nav a.current{
-color: #00B0F0;
-border-bottom:2px solid #00B0F0;
-}
-nav a:hover{
-color:#F7CB4D;
-border-bottom:2px solid #F7CB4D;
+
+nav {
+    text-align: center;
+    width: 100%;
+    border: 2px solid #000; /* ナビゲーション全体に枠を追加 */
+    padding: 5px 0; /* 内側の余白を追加 */
+    background-color: #fff; /* 背景色を追加 */
 }
 
-bg_test {
-    height: 250px;                  /* 高さ指定 */
-    padding:  20px;                 /* 余白指定 */
-    font-size: 20px;                /* 文字サイズ指定 */
-    background-color: powderblue;   /* 背景色指定 */
+nav ul {
+    margin: 80px auto;
+    padding: 0;
 }
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    width: 10%;
+    min-width: 90px;
+}
+
+nav li:not(:last-child) {
+    border-right: 2px solid #ddd;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a.current {
+    color: #00B0F0;
+    border-bottom: 2px solid #00B0F0;
+}
+
+nav a:hover {
+    color: #F7CB4D;
+    border-bottom: 2px solid #F7CB4D;
+}
+
+.bg_test {
+    height: 250px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: powderblue;
+    border: 2px solid #000; /* 全体に枠を追加 */
+}
+
 .bg_test2 {
-    color:  #fff;                   /* 文字色指定 */
-    height: 200px;                  /* 高さ指定 */
-    width:  200px;                  /* 幅指定 */
-    font-size:  14px;               /* 文字サイズ指定 */
-    background-color: blue;         /* 背景色指定 */
-    padding:  20px;                 /* 余白指定 */
-    float:  right;                  /* 位置指定 */
-    position:  relative;            /* 位置指定 */
-    top: 110px;                     /* 位置指定 */
+    color: #fff;
+    height: 200px;
+    width: 200px;
+    font-size: 14px;
+    background-color: blue;
+    padding: 20px;
+    float: right;
+    position: relative;
+    top: 110px;
+    border: 2px solid #000; /* 全体に枠を追加 */
 }

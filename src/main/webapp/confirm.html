@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>患者情報登録</title>
+    <link rel="stylesheet" href="./css/skyblue/css/skyblue.css">
+    <link rel="stylesheet" href="./css/careDetail.css">
+    <link rel="stylesheet" href="./css/横並びメニュー.css">
+    <link rel="stylesheet" href="./css/見出し.css">
+    <script src="./javascript/nav.js"></script>
+</head>
+
+<body>
+
+    <div class="band">
+        <div class="logo-container"> <a href=""><img src="./img/ロゴ試作①.png" alt="ロゴ"></a>
+            <h1><a href="">佐藤イキイキクリニック</a></h1>
+        </div>
+        <h2><a href="">問い合わせ</a></h2>
+    </div>
+
+    <nav id="navbar">
+        <ul>
+            <li><a class="current" href="#">Home</a></li>
+            <li><a href="#">院長挨拶</a></li>
+            <li><a href="#">病院紹介</a></li>
+            <li><a href="#">問い合わせ</a></li>
+            <li><a href="#">採用ページ</a></li>
+            <li><a href="#">診療内容</a></li>
+            <li><a href="#">アクセス</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>患者情報登録</h2>
+        <form action="confirm.html" method="get">
+            <div class="form-group"> <label for="name">名前</label> <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group"> <label for="dob">生年月日</label> <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group"> <label for="email">メールアドレス</label> <input type="email" id="email" name="email"
+                    required> </div>
+            <div class="form-group"> <label for="phone">電話番号</label> <input type="tel" id="phone" name="phone" required>
+            </div> <button type="submit" class="btn-primary">確認</button>
+        </form>
+</body>
+
+</html>
