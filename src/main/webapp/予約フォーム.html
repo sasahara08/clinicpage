@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>予約フォーム</title>
-</head>
-<body>
-  <h1>予約フォーム</h1>
 
-  <input type="radio" >
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>予約フォーム</title>
+  <link rel="stylesheet" href="./css/予約フォーム.css">
+</head>
+
+<body>
+  <h3>予約フォーム</h3>
+  <form action="./Top.html">
+    <table>
+      <tr>
+        <th>【お申込み種別】</th>
+        <td><input type="radio" name="reservation" value="First" />初診</td>
+        <td><input type="radio" name="reservation" value="second" />再診</td>
+      </tr>
+
+      <tr>
+        <th>【予約日時】</th>
+      </tr>
+      <tr>
+        <th>第一希望 </th>
+        <td><input type="text" name="day"></td>
+      </tr>
+      <tr>
+        <th>第二希望</th>
+        <td><input type="text" name="day"></td>
+      </tr>
+      <tr>
+        <th>第三希望</th>
+        <td><input type="text" name="day"></td>
+      </tr>
+
+      <tr>
+        <th>【受診される方のお名前】</th>
+        <td><input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <th>【診察券番号】</th>
+        <td><input type="text" name="namber"></td>
+      </tr>
+      <tr>
+        <th>【生年月日】</th>
+        <td><input type="date" value="2000-01-01" /></td>
+      </tr>
+      <tr>
+        <th>【電話番号】</th>
+        <td><input type="text" name="phone"></td>
+      </tr>
+      <tr>
+        <th>【メールアドレス】</th>
+        <td><input type="text" name="mail"></td>
+      </tr>
+      <tr>
+        <th>【連絡事項】</th>
+        <td><textarea name="coment" cols="40" rows="5"></textarea></td>
+      </tr>
+      <tr>
+        <td> <input class="form-submit" id="BtnMessageConfirm" type="submit" value="送信" /></td>
+
+      </tr>
+    </table>
+  </form>
 </body>
+
 </html>
