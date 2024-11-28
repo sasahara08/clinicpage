@@ -40,7 +40,7 @@ th {
     background-color: #f4f4f4;
 }
 
-input[type="text"], input[type="date"], textarea {
+input[type="text"], input[type="date"],input[type="datetime-local"], textarea {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;

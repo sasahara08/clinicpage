@@ -24,30 +24,28 @@
   </nav>
 
   <h3>予約フォーム</h3>
-  <form id="reservationForm" action="./予約確認画面.html">
+  <form id="reservationForm" action="./予約確認.html">
     <table>
       <tr>
         <th>お申込み種別</th>
         <td>
-          <input type="radio" name="reservation" value="初診" />初診
-          <input type="radio" name="reservation" value="再診" />再診
+          <input type="radio" name="reservation" value="First" />初診
+          <input type="radio" name="reservation" value="second" />再診
         </td>
       </tr>
 
+      
       <tr>
-        <th>予約日時</th>
+        <th>予約日時：第一希望 </th>
+        <td><input type="datetime-local" name="first-choice" id="first-choice"></td>
       </tr>
       <tr>
-        <th>第一希望 </th>
-        <td><input type="text" name="first-choice" id="first-choice"></td>
+        <th>予約日時：第二希望</th>
+        <td><input type="datetime-local" name="second-choice" id="second-choice"></td>
       </tr>
       <tr>
-        <th>第二希望</th>
-        <td><input type="text" name="second-choice" id="second-choice"></td>
-      </tr>
-      <tr>
-        <th>第三希望</th>
-        <td><input type="text" name="third-choice" id="third-choice"></td>
+        <th>予約日時：第三希望</th>
+        <td><input type="datetime-local" name="third-choice" id="third-choice"></td>
       </tr>
 
       <tr>

@@ -11,7 +11,7 @@
 <body>
   <div class="confirmation-container">
     <h1>予約確認</h1>
-    <p>以下の内容で予約を行います。よろしければ「送信」ボタンをクリックしてください。</p>
+    <p>以下の内容で予約を行います。よろしければ「確認」ボタンをクリックしてください。</p>
     <table>
       <tr>
         <th>お申込み種別</th>
@@ -54,26 +54,24 @@
         <td id="confirm-comments"></td>
       </tr>
     </table>
-    <a href="./予約送信.html" class="form-submit">送信</a>
+    <a href="./予約送信.html" class="form-submit">確認</a>
     <a href="./予約フォーム.html" class="back-edit">編集</a>
   </div>
 
   <script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('confirm-reservation').textContent = localStorage.getItem('reservation') || '';
-    document.getElementById('confirm-first-choice').textContent = localStorage.getItem('first-choice') || '';
-    document.getElementById('confirm-second-choice').textContent = localStorage.getItem('second-choice') || '';
-    document.getElementById('confirm-third-choice').textContent = localStorage.getItem('third-choice') || '';
-    document.getElementById('confirm-name').textContent = localStorage.getItem('name') || '';
-    document.getElementById('confirm-number').textContent = localStorage.getItem('number') || '';
-    document.getElementById('confirm-birthdate').textContent = localStorage.getItem('birthdate') || '';
-    document.getElementById('confirm-phone').textContent = localStorage.getItem('phone') || '';
-    document.getElementById('confirm-email').textContent = localStorage.getItem('email') || '';
-    document.getElementById('confirm-comments').textContent = localStorage.getItem('comments') || '';
-});
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('confirm-reservation').textContent = localStorage.getItem('reservation') || '';
+        document.getElementById('confirm-first-choice').textContent = localStorage.getItem('first-choice') || '';
+        document.getElementById('confirm-second-choice').textContent = localStorage.getItem('second-choice') || '';
+        document.getElementById('confirm-third-choice').textContent = localStorage.getItem('third-choice') || '';
+        document.getElementById('confirm-name').textContent = localStorage.getItem('name') || '';
+        document.getElementById('confirm-number').textContent = localStorage.getItem('number') || '';
+        document.getElementById('confirm-birthdate').textContent = localStorage.getItem('birthdate') || '';
+        document.getElementById('confirm-phone').textContent = localStorage.getItem('phone') || '';
+        document.getElementById('confirm-email').textContent = localStorage.getItem('email') || '';
+        document.getElementById('confirm-comments').textContent = localStorage.getItem('comments') || '';
+    });
   </script>
 </body>
-
-
 
 </html>
