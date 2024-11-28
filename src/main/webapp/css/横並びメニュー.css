@@ -28,15 +28,20 @@ color:#F7CB4D;
 border-bottom:2px solid #F7CB4D;
 }
 
-div.sample1 { width: 30%; padding: 2em;
-                 border: solid 1.5em transparent;
-                 background: yellow;
-                 background-clip: border-box; }
-   div.sample2 { width: 30%; padding: 2em;
-                 border: solid 1.5em transparent;
-                 background: yellow;
-                 background-clip: padding-box; }
-   div.sample3 { width: 30%; padding: 2em;
-                 border: solid 1.5em #99CC99;
-                 background: yellow;
-                 background-clip: content-box; }
+bg_test {
+    height: 250px;                  /* 高さ指定 */
+    padding:  20px;                 /* 余白指定 */
+    font-size: 20px;                /* 文字サイズ指定 */
+    background-color: powderblue;   /* 背景色指定 */
+}
+.bg_test2 {
+    color:  #fff;                   /* 文字色指定 */
+    height: 200px;                  /* 高さ指定 */
+    width:  200px;                  /* 幅指定 */
+    font-size:  14px;               /* 文字サイズ指定 */
+    background-color: blue;         /* 背景色指定 */
+    padding:  20px;                 /* 余白指定 */
+    float:  right;                  /* 位置指定 */
+    position:  relative;            /* 位置指定 */
+    top: 110px;                     /* 位置指定 */
+}
