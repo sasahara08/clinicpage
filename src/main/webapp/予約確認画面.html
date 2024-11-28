@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>予約確認</title>
+  <link rel="stylesheet" href="./css/予約確認画面.css">
+</head>
+
+<body>
+  <div class="confirmation-container">
+    <h1>予約確認</h1>
+    <p>以下の内容で予約を行います。よろしければ「送信」ボタンをクリックしてください。</p>
+    <table>
+      <tr>
+        <th>お申込み種別</th>
+        <td id="confirm-reservation"></td>
+      </tr>
+      <tr>
+        <th>第一希望日時</th>
+        <td id="confirm-first-choice"></td>
+      </tr>
+      <tr>
+        <th>第二希望日時</th>
+        <td id="confirm-second-choice"></td>
+      </tr>
+      <tr>
+        <th>第三希望日時</th>
+        <td id="confirm-third-choice"></td>
+      </tr>
+      <tr>
+        <th>お名前</th>
+        <td id="confirm-name"></td>
+      </tr>
+      <tr>
+        <th>診察券番号</th>
+        <td id="confirm-number"></td>
+      </tr>
+      <tr>
+        <th>生年月日</th>
+        <td id="confirm-birthdate"></td>
+      </tr>
+      <tr>
+        <th>電話番号</th>
+        <td id="confirm-phone"></td>
+      </tr>
+      <tr>
+        <th>メールアドレス</th>
+        <td id="confirm-email"></td>
+      </tr>
+      <tr>
+        <th>連絡事項</th>
+        <td id="confirm-comments"></td>
+      </tr>
+    </table>
+    <a href="./予約送信.html" class="form-submit">送信</a>
+    <a href="./予約フォーム.html" class="back-edit">編集</a>
+  </div>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('confirm-reservation').textContent = localStorage.getItem('reservation') || '';
+    document.getElementById('confirm-first-choice').textContent = localStorage.getItem('first-choice') || '';
+    document.getElementById('confirm-second-choice').textContent = localStorage.getItem('second-choice') || '';
+    document.getElementById('confirm-third-choice').textContent = localStorage.getItem('third-choice') || '';
+    document.getElementById('confirm-name').textContent = localStorage.getItem('name') || '';
+    document.getElementById('confirm-number').textContent = localStorage.getItem('number') || '';
+    document.getElementById('confirm-birthdate').textContent = localStorage.getItem('birthdate') || '';
+    document.getElementById('confirm-phone').textContent = localStorage.getItem('phone') || '';
+    document.getElementById('confirm-email').textContent = localStorage.getItem('email') || '';
+    document.getElementById('confirm-comments').textContent = localStorage.getItem('comments') || '';
+});
+  </script>
+</body>
+
+
+
+</html>

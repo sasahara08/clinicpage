@@ -24,13 +24,13 @@
   </nav>
 
   <h3>予約フォーム</h3>
-  <form action="./Top.html">
+  <form id="reservationForm" action="./予約確認画面.html">
     <table>
       <tr>
         <th>お申込み種別</th>
         <td>
-          <input type="radio" name="reservation" value="First" />初診
-          <input type="radio" name="reservation" value="second" />再診
+          <input type="radio" name="reservation" value="初診" />初診
+          <input type="radio" name="reservation" value="再診" />再診
         </td>
       </tr>
 
@@ -39,46 +39,57 @@
       </tr>
       <tr>
         <th>第一希望 </th>
-        <td><input type="text" name="day"></td>
+        <td><input type="text" name="first-choice" id="first-choice"></td>
       </tr>
       <tr>
         <th>第二希望</th>
-        <td><input type="text" name="day"></td>
+        <td><input type="text" name="second-choice" id="second-choice"></td>
       </tr>
       <tr>
         <th>第三希望</th>
-        <td><input type="text" name="day"></td>
+        <td><input type="text" name="third-choice" id="third-choice"></td>
       </tr>
 
       <tr>
         <th>受診される方のお名前</th>
-        <td><input type="text" name="name"></td>
+        <td><input type="text" name="name" id="name"></td>
       </tr>
       <tr>
         <th>診察券番号</th>
-        <td><input type="text" name="namber"></td>
+        <td><input type="text" name="number" id="number"></td>
       </tr>
       <tr>
         <th>生年月日</th>
-        <td><input type="date" value="2000-01-01" /></td>
+        <td><input type="date" name="birthdate" id="birthdate" value="2000-01-01" /></td>
       </tr>
       <tr>
         <th>電話番号</th>
-        <td><input type="text" name="phone"></td>
+        <td><input type="text" name="phone" id="phone"></td>
       </tr>
       <tr>
         <th>メールアドレス</th>
-        <td><input type="text" name="mail"></td>
+        <td><input type="text" name="email" id="email"></td>
       </tr>
       <tr>
         <th>連絡事項</th>
-        <td><textarea name="coment" cols="40" rows="5"></textarea></td>
+        <td><textarea name="comments" id="comments" cols="40" rows="5"></textarea></td>
       </tr>
       <tr>
         <td colspan="2"><input class="form-submit" id="BtnMessageConfirm" type="submit" value="送信" /></td>
       </tr>
     </table>
   </form>
+
+  <script>
+    document.getElementById('reservationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        for (const [key, value] of formData.entries()) {
+            localStorage.setItem(key, value);
+        }
+        window.location.href = event.target.action;
+    });
+  </script>
 </body>
 
 </html>
