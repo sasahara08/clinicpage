@@ -1,11 +1,73 @@
-table {
-    margin: auto;
-    width: 50%;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    background-color: #f98866;
+    padding: 10px;
     text-align: center;
+    color: white;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    text-align: left;
     border-collapse: collapse;
 }
 
-h3{
-    background-color: #f98866;
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
+th {
+    text-align: right;
+    background-color: #f4f4f4;
+}
+
+td {
+    text-align: left;
+}
+
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+textarea {
+    resize: none; /* テキストエリアのサイズ変更を無効にします */
+}
+
+.form-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f98866;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #e87456;
+}

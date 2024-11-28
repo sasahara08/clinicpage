@@ -6,16 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>予約フォーム</title>
   <link rel="stylesheet" href="./css/予約フォーム.css">
+  <link rel="stylesheet" href="./css/横並びメニュー.css">
 </head>
 
 <body>
+
+  <nav>
+    <ul>
+      <li><a class="current" href="#">Home</a></li>
+      <li><a href="#">院長挨拶</a></li>
+      <li><a href="#">病院紹介</a></li>
+      <li><a href="#">問い合わせページ</a></li>
+      <li><a href="#">採用ページ</a></li>
+      <li><a href="#">診療内容</a></li>
+      <li><a href="#">アクセス</a></li>
+    </ul>
+  </nav>
+
   <h3>予約フォーム</h3>
   <form action="./Top.html">
     <table>
       <tr>
         <th>【お申込み種別】</th>
-        <td><input type="radio" name="reservation" value="First" />初診</td>
-        <td><input type="radio" name="reservation" value="second" />再診</td>
+        <td>
+          <input type="radio" name="reservation" value="First" />初診
+          <input type="radio" name="reservation" value="second" />再診
+        </td>
       </tr>
 
       <tr>
@@ -59,8 +75,7 @@
         <td><textarea name="coment" cols="40" rows="5"></textarea></td>
       </tr>
       <tr>
-        <td> <input class="form-submit" id="BtnMessageConfirm" type="submit" value="送信" /></td>
-
+        <td colspan="2"><input class="form-submit" id="BtnMessageConfirm" type="submit" value="送信" /></td>
       </tr>
     </table>
   </form>
