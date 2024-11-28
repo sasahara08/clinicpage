@@ -1,9 +1,10 @@
 @charset "UTF-8";
 nav{
 text-align: center;
+width: 100%;
 }
 nav ul{
-margin: 0 ;
+margin: 80px auto;
 padding: 0 ;
 }
 nav li{
