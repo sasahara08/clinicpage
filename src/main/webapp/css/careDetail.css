@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ここから下は見出し */
+.band {
+    background-color: #f98866;
+    border-radius: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center; /* 縦方向の中央揃え */
+    justify-content: space-between; /* 両端揃え */
+    padding: 0 3%;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* 縦方向の中央揃え */
+}
+
+.band h1 {
+    margin: 0;
+    padding: 15px;
+}
+
+.band h1 a {
+    color: rgb(3, 20, 25);
+    text-decoration: none;
+}
+
+.band h1 a:hover {
+    background-color: #adcd2cd5;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.band h2 {
+    margin: 0;
+    padding: 15px;
+}
+
+.band h2 a {
+    color: rgb(3, 20, 25);
+    text-decoration: none;
+}
+
+.titleText {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #fffeae;
+    text-align: center;
+    background: #f4d07e; /*背景色*/
+    padding: 0.5em; /*文字周りの余白*/
+    color: white; /*文字を白に*/
+    border-radius: 0.5em; /*角の丸み*/
+    text-indent: 1rem;
+}
+
+
+/* ここから下は診療内容 */
+
+
+
+.description_Ul{
+    margin: auto;
+    list-style: none;
+    width: 80%;
+    padding: 50px;
+    text-align: center;
+}
+
+.description_li {
+    background-color: #fff8ee; /* 背景色を追加 */
+    border: 1px solid #f98866; /* ボーダーを追加 */
+    border-radius: 10px; /* 角を丸める */
+    padding: 50px; /* 内側の余白を追加 */
+    margin-bottom: 20px; /* 下のマージンを追加 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    list-style: none; /* リストスタイルを削除 */
+    margin-bottom: 50px;
+}
+
+li h3 {
+    color: #f98866; /* 見出しの文字色を変更 */
+    font-size: 1.5rem; /* フォントサイズを大きく */
+    margin-top: 0; /* 上のマージンを削除 */
+}
+
+li p {
+    color: #333; /* テキストの文字色を変更 */
+    line-height: 1.6; /* 行間を広く */
+    margin: 10px 0; /* 上下のマージンを追加 */
+}
+
+/* ここから下はアイコン用 */
+.dli-edit {
+    display: inline-block;
+    vertical-align: middle;
+    color: #f98866;
+    line-height: 1;
+    width: 0.9em;
+    height: 0.9em;
+    border: 0.1em solid currentColor;
+    border-radius: 0.1em;
+    background: #fff8ee;
+    box-sizing: content-box;
+    position: relative;
+    margin-right: 20px;
+    top: -3px;
+  }
+  
+  .dli-edit > span {
+    font-size: 0.8em;
+    position: relative;
+    width: 1.05em;
+    height: 0.2em;
+    background: currentColor;
+    border-radius: 0 0.075em 0.075em 0;
+    transform: rotate(-45deg);
+    transform-origin: left center;
+    box-shadow: 0 0 0 0.125em #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .dli-edit > span::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0.1em 0.15em;
+    border-right-color: currentColor;
+    border-left: 0;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .dli-edit > span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.15em;
+    border-left: 0.05em solid #fff;
+    box-sizing: content-box;
+  }
