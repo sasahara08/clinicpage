@@ -11,11 +11,14 @@ h3 {
     padding: 10px;
     text-align: center; /* タイトルを中央寄せ */
     color: white;
+    margin:auto;
+    width: 80%;
+    font-size: 1.25rem;
 }
 
 form {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 60px auto;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -40,7 +43,7 @@ th {
     background-color: #f4f4f4;
 }
 
-input[type="text"], input[type="date"], textarea {
+input[type="text"], input[type="date"],input[type="datetime-local"], textarea {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
