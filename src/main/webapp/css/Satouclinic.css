@@ -88,7 +88,7 @@ h2 a:hover {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: #dc7cfc;
+    color: #bd6ed8;
 }
 .box1 div:hover {
     color: rgb(95, 74, 213);
@@ -109,7 +109,7 @@ a {
     padding: 20px 10px;
 }
 .box4 div:hover {
-    color: #f45187;
+    color: #f66a98;
     background-color: rgb(201, 150, 247); 
     border-radius: 50%;
     padding: 20px 10px;
