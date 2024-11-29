@@ -7,9 +7,19 @@ body {
 }
 
 h3 {
+    width: 80%;
+    margin: auto;
+    background-color: #fffeae;
     text-align: center;
-    color: #f98866;
-    margin-top: 80px;
+    background: #f4d07e;
+    /*背景色*/
+    padding: 0.5em;
+    /*文字周りの余白*/
+    color: white;
+    /*文字を白に*/
+    border-radius: 0.5em;
+    /*角の丸み*/
+    text-indent: 1rem;
 }
 
 .titleText {
