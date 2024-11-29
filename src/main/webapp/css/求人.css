@@ -52,3 +52,19 @@ table.recruit_table tr:hover {
         padding: 8px;
     }
 }
+
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f98866;
+    ;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.home-button:hover {
+    background-color: #f98866;
+    ;
+}
