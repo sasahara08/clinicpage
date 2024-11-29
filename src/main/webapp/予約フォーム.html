@@ -15,24 +15,24 @@
 
 <body>
 
-    <div class="band">
-        <div class="logo-container"> <a href="./Top.html"><img src="./img/ロゴ試作①.png" alt="ロゴ"></a>
-            <h1 class="header_h1"><a href="./Top.html">佐藤イキイキクリニック</a></h1>
-        </div>
-        <h2 class="header_h2"><a href="">問い合わせ</a></h2>
+  <div class="band">
+    <div class="logo-container"> <a href="./Top.html"><img src="./img/ロゴ試作①.png" alt="ロゴ"></a>
+      <h1 class="header_h1"><a href="./Top.html">佐藤イキイキクリニック</a></h1>
     </div>
+    <h2 class="header_h2"><a href="">問い合わせ</a></h2>
+  </div>
 
-    <nav id="navbar">
-        <ul>
-            <li><a class="current" href="#">Home</a></li>
-            <li><a href="./院長挨拶・紹介.html">院長挨拶</a></li>
-            <li><a href="./careDetail.html">病院紹介</a></li>
-            <li><a href="./access.html">アクセス</a></li>
-            <li><a href="./careDetail.html">診療内容</a></li>
-            <li><a href="./予約フォーム.html">診察予約</a></li>
-            <li><a href="./求人.html">求人情報</a></li>
-        </ul>
-    </nav>
+  <nav id="navbar">
+    <ul>
+      <li><a class="current" href="#">Home</a></li>
+      <li><a href="./院長挨拶・紹介.html">院長挨拶</a></li>
+      <li><a href="./careDetail.html">病院紹介</a></li>
+      <li><a href="./access.html">アクセス</a></li>
+      <li><a href="./careDetail.html">診療内容</a></li>
+      <li><a href="./予約フォーム.html">診察予約</a></li>
+      <li><a href="./求人.html">求人情報</a></li>
+    </ul>
+  </nav>
 
   <h3 class="titleText">予約フォーム</h3>
   <form id="reservationForm" action="./予約確認画面.html">
@@ -45,7 +45,7 @@
         </td>
       </tr>
 
-      
+
       <tr>
         <th>予約日時：第一希望 </th>
         <td><input type="datetime-local" name="first-choice" id="first-choice" value=""></td>
@@ -55,7 +55,7 @@
         <td><input type="datetime-local" name="second-choice" id="second-choice" value=""></td>
       </tr>
       <tr>
-        <th>予約日時：第三希望</th> 
+        <th>予約日時：第三希望</th>
         <td><input type="datetime-local" name="third-choice" id="third-choice" value=""></td>
       </tr>
 
@@ -81,7 +81,8 @@
       </tr>
       <tr>
         <th>連絡事項</th>
-        <td><textarea name="comments" id="comments" cols="40" rows="5"></textarea></td>
+        <td><textarea name="comments" id="comments" class="centered" cols="40" rows="5"></textarea></td>
+
       </tr>
       <tr>
         <td colspan="2"><input class="form-submit" id="BtnMessageConfirm" type="submit" value="送信" /></td>
