@@ -17,7 +17,7 @@ nav.fixed {
 
 nav ul {
     position: relative;
-    margin: 80px auto;
+    margin: 40px auto 100px auto;
     padding: 0;
     top: 25%;
 }
