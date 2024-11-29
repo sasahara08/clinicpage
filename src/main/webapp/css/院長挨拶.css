@@ -1,12 +1,19 @@
 @charset "UTF-8";
 
 .class_a {
-  border-bottom: 6px double #000;
-  display: inline-block;
+	width: 8%;
+	  padding: 1rem 2rem;
+	  color: #fff;
+	  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+	  background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
+	  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+.color-css {
+  color: black;
 }
 
 .contents {
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 
@@ -17,11 +24,32 @@
 
 .container img {
   height: 300px;
-  width: 40%;
+  width: 35%;
 }
 
 .container span {
   word-wrap: break-word;
   white-space: normal;
-  width: 50%;
+  width: 65%;
+}
+.titleText {
+    width: 80%;
+    background-color: #fffeae;
+    text-align: center;
+    background: #f4d07e;
+    /*背景色*/
+    padding: 0.5em;
+    /*文字周りの余白*/
+    color: white;
+    /*文字を白に*/
+    border-radius: 0.5em;
+    /*角の丸み*/
+    text-indent: 1rem;
+}
+.border {
+    padding: 0.2rem;
+    margin: 10px 0px;
+    background: linear-gradient(transparent 60%, #f9886699 60%);
+    font-size: 1.8rem;
+    font-weight: bold;
 }
