@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-h3 {
+.titleText {
     width: 80%;
     margin: auto;
     background-color: #fffeae;
@@ -79,3 +79,10 @@ textarea {
 .form-submit:hover {
     background-color: #e87456;
 }
+
+.centered {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  

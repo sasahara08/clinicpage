@@ -1,0 +1,30 @@
+.image-container {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 50 auto;
+}
+
+.image-container p {
+    margin: 50px auto;
+    font-size: 1em;
+    color: #333;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    width: 80%;
+    margin: auto;
+    background-color: #fffeae;
+    text-align: center;
+    background: #f4d07e;
+    padding: 0.5em;
+    color: white;
+    border-radius: 0.5em;
+    text-indent: 1rem;
+}
