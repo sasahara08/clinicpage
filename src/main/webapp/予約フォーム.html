@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/横並びメニュー.css">
   <link rel="icon" href="./img/favicon.ico">
   <script src="./javascript/nav.js"></script>
+  <script src="./javascript/promise.js"></script>
 </head>
 
 <body>
@@ -34,13 +35,14 @@
     </nav>
 
   <h3>予約フォーム</h3>
-  <form id="reservationForm" action="./予約確認画面.html">
+  
+  <form id="reservationForm" name="getForm" method="get" action="./予約確認画面.html" onsubmit="return check();">
     <table>
       <tr>
         <th>お申込み種別</th>
         <td>
-          <input type="radio" name="reservation" value="初診" />初診
-          <input type="radio" name="reservation" value="再診" />再診
+          <input type="radio" name="reservation" value="初診" id="reservation" />初診
+          <input type="radio" name="reservation" value="再診" id="reservation"/>再診
         </td>
       </tr>
 
@@ -60,7 +62,7 @@
 
       <tr>
         <th>受診される方のお名前</th>
-        <td><input type="text" name="name" id="name"></td>
+        <td><input type="text" name="name" id="username"></td>
       </tr>
       <tr>
         <th>診察券番号</th>
@@ -88,16 +90,7 @@
     </table>
   </form>
 
-  <script>
-    document.getElementById('reservationForm').addEventListener('submit', function (event) {
-      event.preventDefault();
-      const formData = new FormData(event.target);
-      for (const [key, value] of formData.entries()) {
-        localStorage.setItem(key, value);
-      }
-      window.location.href = event.target.action;
-    });
-  </script>
+
 </body>
 
 </html>
