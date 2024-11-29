@@ -32,6 +32,7 @@ table.recruit_table td {
 table.recruit_table th {
     background-color: #f98866;
     color: white;
+    text-align: center; /* ここを追加 */
 }
 
 table.recruit_table tr:nth-child(even) {
@@ -57,7 +58,6 @@ table.recruit_table tr:hover {
     display: inline-block;
     padding: 10px 20px;
     background-color: #f98866;
-    ;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -66,5 +66,4 @@ table.recruit_table tr:hover {
 
 .home-button:hover {
     background-color: #f98866;
-    ;
 }
