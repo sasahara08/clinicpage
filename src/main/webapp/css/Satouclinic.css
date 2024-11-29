@@ -3,12 +3,16 @@
 body {
     background-color: #fff8ef;
 }
+<<<<<<< HEAD
 .band {
     background-color: #f98866;
     border-radius: 10px;
     height: 70px;
 }
+=======
+>>>>>>> branch 'master' of https://github.com/sasahara08/clinicpage.git
 
+<<<<<<< HEAD
 h1 {
     padding: 15px 0px 15px 3%;
 }
@@ -34,6 +38,8 @@ h2 a:hover {
 
     padding: 12px 7px 8px 7px;
 }
+=======
+>>>>>>> branch 'master' of https://github.com/sasahara08/clinicpage.git
 .container {
     display: flex; flex-wrap: wrap; 
     justify-content: space-between; 
