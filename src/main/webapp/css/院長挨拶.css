@@ -1,13 +1,27 @@
 @charset "UTF-8";
-.class_a{
+
+.class_a {
   border-bottom: 6px double #000;
   display: inline-block;
 }
 
-.contents{
+.contents {
   width: 80%;
-  margin:auto;
+  margin: auto;
 }
-.container{
-  display:flex;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container img {
+  height: 300px;
+  width: 40%;
+}
+
+.container span {
+  word-wrap: break-word;
+  white-space: normal;
+  width: 50%;
 }

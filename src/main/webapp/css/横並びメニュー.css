@@ -1,62 +1,41 @@
 @charset "UTF-8";
-
-nav {
-    text-align: center;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    transition: background-color 1s;
-    height: 50px;
-    
+nav{
+text-align: center;
+width: 100%;
+}
+nav ul{
+margin: 80px auto;
+padding: 0 ;
+}
+nav li{
+list-style: none;
+display: inline-block;
+width: 10%;
+min-width: 90px;
+}
+nav li:not(:last-child){
+border-right:2px solid #ddd;
+}
+nav a{
+text-decoration: none;
+color: #333;
+}
+nav a.current{
+color: #00B0F0;
+border-bottom:2px solid #00B0F0;
+}
+nav a:hover{
+color:#F7CB4D;
+border-bottom:2px solid #F7CB4D;
 }
 
-nav.fixed {
-    background-color: rgb(255, 178, 78);
+bg_test {
+    height: 250px;                  /* 高さ指定 */
+    padding:  20px;                 /* 余白指定 */
+    font-size: 20px;                /* 文字サイズ指定 */
+    background-color: powderblue;   /* 背景色指定 */
 }
-
-nav ul {
-    position: relative;
-    margin: 40px auto 100px auto;
-    padding: 0;
-    top: 25%;
-}
-
-nav li {
-    list-style: none;
-    display: inline-block;
-    width: 10%;
-    min-width: 90px;
-}
-
-nav li:not(:last-child) {
-    border-right: 2px solid #ddd;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-}
-
-nav a.current {
-    color: #00B0F0;
-    border-bottom: 2px solid #00B0F0;
-}
-
-nav a:hover {
-    color: #F7CB4D;
-    border-bottom: 2px solid #F7CB4D;
-}
-
-.bg_test {
-    height: 250px;
-    padding: 20px;
-    font-size: 20px;
-    background-color: powderblue;
-}
-
 .bg_test2 {
-<<<<<<< HEAD
     color:  #fff;                   /* 文字色指定 */
     height: 200px;                  /* 高さ指定 */
     width:  200px;                  /* 幅指定 */
@@ -67,15 +46,3 @@ nav a:hover {
     position:  relative;            /* 位置指定 */
     top: 110px;                     /* 位置指定 */
 }
-=======
-    color: #fff;
-    height: 200px;
-    width: 200px;
-    font-size: 14px;
-    background-color: blue;
-    padding: 20px;
-    float: right;
-    position: relative;
-    top: 110px;
-}
->>>>>>> branch 'master' of https://github.com/sasahara08/clinicpage.git
