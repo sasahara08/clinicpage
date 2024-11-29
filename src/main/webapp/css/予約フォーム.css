@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-h3 {
+.titleText {
     width: 80%;
     margin: auto;
     background-color: #fffeae;
