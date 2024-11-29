@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.class_a{
+  border-bottom: 6px double #000;
+  display: inline-block;
+}
+
+.contents{
+  width: 80%;
+  margin:auto;
+}
+.container{
+  display:flex;
+}
