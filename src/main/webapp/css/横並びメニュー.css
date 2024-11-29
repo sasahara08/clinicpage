@@ -36,6 +36,7 @@ bg_test {
     background-color: powderblue;   /* 背景色指定 */
 }
 .bg_test2 {
+<<<<<<< HEAD
     color:  #fff;                   /* 文字色指定 */
     height: 200px;                  /* 高さ指定 */
     width:  200px;                  /* 幅指定 */
@@ -45,4 +46,15 @@ bg_test {
     float:  right;                  /* 位置指定 */
     position:  relative;            /* 位置指定 */
     top: 110px;                     /* 位置指定 */
+=======
+    color: #fff;
+    height: 200px;
+    width: 200px;
+    font-size: 14px;
+    background-color: blue;
+    padding: 20px;
+    float: right;
+    position: relative;
+    top: 110px;
+>>>>>>> branch 'master' of https://github.com/sasahara08/clinicpage.git
 }
