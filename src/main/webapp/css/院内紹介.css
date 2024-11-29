@@ -1,24 +1,28 @@
 .image-container {
     text-align: center;
     margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-container img {
     max-width: 50%;
     height: auto;
-    display: block;
-    margin: 50 auto;
+    margin-bottom: 30px;
+    
+    
 }
 
 .image-container p {
-    margin: 50px auto;
     font-size: 1em;
     color: #333;
 }
 
 p {
     font-family: 'Arial', sans-serif;
-    width: 80%;
+    width: 50%;
     margin: auto;
     background-color: #fffeae;
     text-align: center;
