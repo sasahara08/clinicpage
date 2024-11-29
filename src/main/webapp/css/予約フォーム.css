@@ -79,3 +79,7 @@ textarea {
 .form-submit:hover {
     background-color: #e87456;
 }
+
+.red_form{
+    outline: 1px red solid;
+}
