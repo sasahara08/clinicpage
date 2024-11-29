@@ -6,16 +6,29 @@ body {
     padding: 0;
     animation: fadeIn 1s ease 0s 1 normal;
     -webkit-animation: fadeIn 1s ease 0s 1 normal;
+    position: relative;
 }
 
 @keyframes fadeIn {
-    0% {opacity: 0; transform: translateY(20px);}
-    100% {opacity: 1}
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1
+    }
 }
 
 @-webkit-keyframes fadeIn {
-    0% {opacity: 0;transform: translateY(0px);}
-    100% {opacity: 1}
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 1
+    }
 }
 
 /* ここから下は見出し */
@@ -30,7 +43,7 @@ body {
     /* 両端揃え */
     padding: 0 3%;
     width: 80%;
-    margin: 50px auto;
+    margin: 50px auto 20px auto;
 }
 
 .logo-container {
