@@ -93,7 +93,7 @@ textarea {
 }
 
 /* 通常の入力フィールドスタイル */
-input.red_form::placeholder {
+input.red_form::placeholder,textarea.red_form::placeholder {
     color: red;
     font-weight: bold;
 }
