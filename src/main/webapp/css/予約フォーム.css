@@ -80,15 +80,12 @@ textarea {
     background-color: #e87456;
 }
 
-<<<<<<< HEAD
 .centered {
     display: block;
     margin: 0 auto;
     text-align: center;
   }
   
-=======
 .red_form{
     outline: 1px red solid;
 }
->>>>>>> branch 'master' of https://github.com/sasahara08/clinicpage.git
