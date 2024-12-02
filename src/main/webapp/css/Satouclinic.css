@@ -75,8 +75,14 @@ h2 a:hover {
     text-decoration: none;
     /*リンクの下線を消す*/
     font-weight: bold;
-    color: #9074c1;
+    color: #414141;
+    font-size: larger;
 
+}
+
+.container img{
+    width: 25%;
+    height: auto;
 }
 
 .box1,
@@ -89,9 +95,10 @@ h2 a:hover {
     /* お好みの高さに調整してください */
     font-size: 30px;
     /* color: #f98866; */
-    background-color: #6495ED;
+    background-color: #9cb1d6;
     /* margin-bottom: 10px; ボックス間のスペース  */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 1px solid #ccc;
@@ -113,7 +120,7 @@ h2 a:hover {
 
 .box4 {
     /* background-color: bisque; */
-    background-color: rgb(125, 220, 220);
+    background-color: rgb(168, 224, 238);
 }
 
 .box5 {
@@ -121,40 +128,35 @@ h2 a:hover {
 }
 
 .box6 {
-    background-color: #da7ff8;
+    background-color: #ffbd72;
 }
 
-.container a:hover .box1 {
-    color: rgb(121, 99, 246);
-    background-color: #FFFF66;
+.container a:hover .box1 {  
+    background-color: #c5d69c;
     border-radius: 50%;
     padding: 20px 10px;
 }
 
 .container a:hover .box2 {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    color: rgb(218, 33, 206);
-    background-color: #4f91d4;
+    background-color: rgb(252, 203, 210);
     border: none;
 }
 
 .container a:hover .box3 {
-    color: rgb(125, 225, 49);
-    background-color: rgb(242, 146, 175);
+    background-color:  rgb(252, 232, 209);
     border-radius: 0;
     margin: 20px 10px;
 }
 
 .container a:hover .box4 {
-    color: #f66a98;
-    background-color: rgb(201, 150, 247);
+    background-color: rgb(188, 229, 240);
     border-radius: 0;
     padding: 20px 10px;
 }
 
 .container a:hover .box5 {
-    color: rgb(158, 38, 232);
-    background-color: #5cf3f0;
+    background-color:  #ffd4c1;
     border-radius: 40%;
     padding: -20px;
 }
@@ -162,15 +164,14 @@ h2 a:hover {
 .container a:hover .box6 {
     clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
     border: none;
-    color: rgb(181, 241, 51);
-    background-color: rgb(235, 132, 170);
+    background-color:  #ffc88a;
     border-radius: 50%;
     padding: 20px 10px;
 
 }
 
 .Information {
-    background-color: #91b2ee;
+    background-color: #f8d589;
     border-radius: 20px;
     width: 80%;
     margin: 50px auto;
@@ -179,7 +180,7 @@ h2 a:hover {
 h3 {
     font-weight: bold;
     font-size: 25px;
-    color: #9939e2;
+    color: #333333;
     padding: 0% 0% 0% 1%;
 }
 
@@ -194,7 +195,7 @@ h3 {
     flex-wrap: wrap;
     flex-wrap: nowrap;
     text-decoration: none;
-    color: #c3f33e;
+    color: #333333;
     border-bottom: 1px solid #CCC;
     padding: 20px 20px;
 }
@@ -207,7 +208,7 @@ h3 {
     margin: 0;
     min-width: 120px;
     font-size: 16px;
-    color: #e319a0;
+    color: #333333;
     padding: 0 20px 0 0;
 }
 
@@ -232,7 +233,7 @@ h3 {
 .hospital_introduction h3 {
     font-weight: bold;
     font-size: 30px;
-    color: rgb(72, 230, 101);
+    color: rgb(65, 65, 65);
 }
 
 
@@ -275,6 +276,14 @@ h3 {
 
 
     /* animation: slide 5s linear infinite; 5秒間隔で無限にスライド */
+}
+
+.border {
+    padding: 0.2rem;
+    margin: 100px 0px;
+    background: linear-gradient(transparent 60%, #f9886699 60%);
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 /* @keyframes slide { 

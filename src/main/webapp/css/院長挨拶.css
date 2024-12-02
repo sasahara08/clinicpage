@@ -14,7 +14,7 @@
 
 .contents {
   width: 70%;
-  margin: auto;
+  margin: 30px auto;
 }
 
 .container {
@@ -57,6 +57,7 @@
 }
 .px{
   font-size:20px;
+  
 }
 .alignr{
 	text-align:right;

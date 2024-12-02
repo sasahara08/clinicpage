@@ -1,12 +1,14 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff8ef;
     color: #333;
     margin: 0;
     padding: 0;
     animation: fadeIn 1s ease 0s 1 normal;
     -webkit-animation: fadeIn 1s ease 0s 1 normal;
     position: relative;
+    width: 85%;
+    margin: auto;
 }
 
 @keyframes fadeIn {
@@ -33,9 +35,9 @@ body {
 
 /* ここから下は見出し */
 .band {
-    background-color: #f98866;
+    background-color: #ffe5ac;
     border-radius: 10px;
-    height: 100px;
+    height: 150px;
     display: flex;
     align-items: center;
     /* 縦方向の中央揃え */
@@ -43,7 +45,7 @@ body {
     /* 両端揃え */
     padding: 0 3%;
     width: 80%;
-    margin: 50px auto 20px auto;
+    margin: 0px auto 20px auto;
 }
 
 .logo-container {
@@ -57,6 +59,10 @@ body {
     padding: 40px;
 }
 
+.h1_title{
+    font-family:   monospace;
+    font-size: 2rem;
+}
 .band h1 a {
     color: rgb(3, 20, 25);
     text-decoration: none;
@@ -92,4 +98,26 @@ body {
     border-radius: 0.5em;
     /*角の丸み*/
     text-indent: 1rem;
+}
+
+.btn--orange,
+a.btn--orange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #eb6100;
+    width: 200px;
+    height: 80px;
+    text-decoration:none;
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+    color: #fff;
+    background: #f37b25;
+}
+
+a.btn--radius {
+    border-radius: 100vh;
 }
