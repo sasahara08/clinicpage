@@ -48,33 +48,46 @@ h2 a {
 h2 a:hover {
     background-color: #f0f680;
     border-radius: 50%;
-
     padding: 12px 7px 8px 7px;
 }
 .container {
-    display: flex; flex-wrap: wrap; 
+    display: flex; 
+    flex-wrap: wrap; 
     justify-content: space-between; 
     width: 70%; /* お好みの幅に調整してください */
     margin: 8% auto; /* 中央揃えにするため */
-    /* justify-content: space-between; */
+    gap: 10px;
 }
+
+.container a { 
+    flex: 1 1 calc(33.333% - 10px); /* 1行に3つ並べるための設定  */
+    box-sizing: border-box; /* パディングとボーダーを含む */ 
+    /* margin: 10px;  ボックス間のスペース  */
+    text-decoration: none; /*リンクの下線を消す*/
+    font-weight: bold;
+    color: #9074c1;
+
+}
+
 .box1,
 .box2,
 .box3,
 .box4,
 .box5,
 .box6 {
-    width: calc(33.33% - 10px); /* 2つのボックスを並べるため */ 
     height: 300px; /* お好みの高さに調整してください */ 
     font-size: 30px;
     /* color: #f98866; */
     background-color: #6495ED;
-    margin-bottom: 10px; /* ボックス間のスペース */ 
+    /* margin-bottom: 10px; ボックス間のスペース  */
     display: flex; 
     align-items: center; 
     justify-content: center; 
     border: 1px solid #ccc;
     border-radius: 20px;
+    transition: all 0.3s;
+    position: relative; 
+    overflow: hidden;
     /* display: block; */
 }
 .box2 {
@@ -94,46 +107,45 @@ h2 a:hover {
 .box6 {
     background-color: #da7ff8;
 }
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #9b5fb0;
-}
-.box1 div:hover {
+.container a:hover .box1 {
     color: rgb(121, 99, 246);
     background-color: #FFFF66;
     border-radius: 50%;
     padding: 20px 10px;
 }
-.box2 div:hover {
-    color: rgb(218, 33, 206);
-    background-color: rgb(151, 241, 243); 
-    border-radius: 50%;
-    padding: 20px 10px;
+.container a:hover .box2 { 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    color: rgb(218, 33, 206); 
+    background-color: #4f91d4;
+    border: none;
 }
-.box3 div:hover {
+
+.container a:hover .box3 {
     color: rgb(125, 225, 49);
     background-color: rgb(242, 146, 175); 
-    border-radius: 50%;
-    padding: 20px 10px;
+    border-radius: 0;
+    margin: 20px 10px;
 }
-.box4 div:hover {
+.container a:hover .box4 {
     color: #f66a98;
     background-color: rgb(201, 150, 247); 
-    border-radius: 50%;
+    border-radius: 0;
     padding: 20px 10px;
 }
-.box5 div:hover {
-    color: rgb(121, 99, 246);
-    background-color: #FFFF66;
-    border-radius: 50%;
-    padding: 20px 10px;
+.container a:hover .box5 {
+    color: rgb(158, 38, 232);
+    background-color: #5cf3f0;
+    border-radius: 40%;
+    padding: -20px;
 }
-.box6 div:hover {
-    color: rgb(235, 117, 227);
-    background-color: rgb(151, 241, 243); 
+.container a:hover .box6 {
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+    border: none;
+    color: rgb(181, 241, 51);
+    background-color: rgb(235, 132, 170); 
     border-radius: 50%;
     padding: 20px 10px;
+
 }
 .Information {
     background-color: #91b2ee;
@@ -144,7 +156,7 @@ a {
 h3 {
     font-weight: bold;
     font-size: 25px;
-    color: #e1eb21;
+    color: #9939e2;
     padding: 0% 0% 0% 1%;
 }
 .news-list{
@@ -157,7 +169,7 @@ h3 {
     flex-wrap: wrap;
     flex-wrap: nowrap;
     text-decoration: none;
-    color: #333;
+    color: #c3f33e;
     border-bottom: 1px solid #CCC;
     padding: 20px 20px;
   }
@@ -168,7 +180,7 @@ h3 {
     margin: 0;
     min-width: 120px;
     font-size: 16px;
-    color: #999;
+    color: #e319a0;
     padding: 0 20px 0 0;
   }
   .news-list .item .title{
@@ -178,10 +190,39 @@ h3 {
   .news-list .item a:hover .title{
     color: #00F;
   }
+.hospital_introduction {
+    /* background-color: #1ed2a5; */
+    width: 80%;
+    /* border-radius: 20px; */
 
+    margin: 50px auto;
+    padding: 50px 0;
+}
   .hospital_introduction h3 {
     font-weight: bold;
-    font-size: 20px;
-    color: darkcyan;
-
+    font-size: 30px;
+    color: rgb(72, 230, 101);
   }
+
+
+  .image-container {
+    display: flex; /* フレックスボックスレイアウトを使用 */
+    justify-content: space-around; /* 各画像の間にスペースを配置 */
+    align-items: center; /* 画像を中央揃え */
+    gap: 10px; /* 画像の間に10pxの隙間を設定（任意） */
+}
+
+.image-container a {
+    flex: 1; /* 各画像リンクが均等にスペースを取る */
+    text-align: center; /* 画像を中央揃え */
+}
+
+.image-container img {
+    max-width: 100%; /* 画像が親要素の幅を超えないようにする */
+    height: auto; /* 画像のアスペクト比を保持 */
+    animation: slide 5s linear infinite; /* 5秒間隔で無限にスライド */
+}
+@keyframes slide { 
+    0% { transform: translateX(100%); } 
+    100% { transform: translateX(-100%); }
+}
