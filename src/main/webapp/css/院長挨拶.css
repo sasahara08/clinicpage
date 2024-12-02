@@ -20,11 +20,13 @@
 .container {
   display: flex;
   justify-content: space-between;
+  margin:35px 0 0 0;
 }
 
 .container img {
-  height: 300px;
-  width: 35%;
+	width:230px; 
+	height:340px;
+	margin:0 100 0 0;
 }
 
 .container span {
@@ -48,8 +50,22 @@
 }
 .border {
     padding: 0.2rem;
-    margin: 10px 0px;
+    margin:0 0 500 0;
     background: linear-gradient(transparent 60%, #f9886699 60%);
     font-size: 1.8rem;
     font-weight: bold;
 }
+.px{
+  font-size:20px;
+}
+.alignr{
+	text-align:right;
+	}
+
+.alignc{
+	text-align:center;
+  margin: 0px;
+	}
+  table { width: 80%; border-collapse: collapse; margin: 0 auto; /* テーブルを中央に配置 */ } 
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; } 
+  th { background-color: #f2f2f2;}
