@@ -15,6 +15,7 @@
 
 .footer-001 li{
     width: 200px;
+    text-align: center
 }
 
 .footer-001__logo {
@@ -41,7 +42,7 @@
 }
 
 .footer-001__copyright {
-    margin: 30px auto;
+    margin: 10px auto;
     color: #111111;
     font-weight: 200;
     font-size: .8em;
